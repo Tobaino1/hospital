@@ -33,18 +33,20 @@
 <marquee>Students are required to use the feedback form to send us message, suggestions.</marquee>
 <div align="center">
     <img src="images/lasulogo.PNG">
+
 </div>
 <div align="center"><h3> Feedback Form </h3>
 
     <form id="emailForm" name="emailForm" method="post" action="feedback_mail.php">
+        <input name="matric" type="text" id="matric" size="45" placeholder="Matric"></textarea>
+        <br> <br>
         <input name="surname" type="text" id="surname" size="45" placeholder="Surname">
         <br><br>
         <input name="email_address" type="text" id="email_address" size="45" placeholder="Email Address"></td>
         <br> <br>
-        <input name="matric" type="text" id="matric" placeholder="Matric"></textarea>
-        <br> <br>
-        <textarea name="content" cols="30" rows="15" align="justify"
-                  placeholder="copy and paste texts here" required></textarea>
+
+        <textarea name="content" cols="45" rows="15" align="justify"
+                  placeholder="Message here" required></textarea>
         <br>
         <input name="SubmitBtn" type="submit" id="SubmitBtn" value="Submit">
 
