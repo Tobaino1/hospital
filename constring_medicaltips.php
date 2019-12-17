@@ -35,8 +35,8 @@ $sql = "INSERT INTO medicaltips(topic, publisher, image, content) VALUES
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully ";
-//        header("Location: success.php"); // redirecting to the other page
+//    echo "New record created successfully ";
+    header("Location: success.php"); // redirecting to the other page
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

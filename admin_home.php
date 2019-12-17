@@ -4,12 +4,19 @@
         session_start(); 
     } 
 ?>
+<link rel="icon" href="images/lasulogo.PNG">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="jumbotron.css" rel="stylesheet">
+<h1 align="center">Welcome to Agent Based Clinic Management System</h1>
+<p class="block-quote" align="center"> Our aim has always been to bring world–class medical care within our reach for
+    our distinguished students</p>
 
-<?php 
-  include("header.php");
+<p><?php include('slideshow.php'); ?></p>
+
+<?php
+//  include("header.php");
   include("library.php");
+include("header_admin.php");
 
   noAccessForClerk();
   noAccessForDoctor();
@@ -19,7 +26,7 @@
 
 ?>
 <div class="container">
- 	<h1 align=center>Admin Login for Sunrise Hospital</h1>
+    <h1 align=center>Admin Page</h1>
   
   <?php 
     if(isset($_POST['demail'])){
