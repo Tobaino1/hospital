@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php include('access_db.php'); ?>
-
+<link rel="icon" href="images/lasulogo.PNG">
 <link href="bootstrap.min.css" rel="stylesheet">
 <div class="container">
     <h1>Welcome to Agent Based Clinic Management System</h1>

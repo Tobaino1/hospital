@@ -6,7 +6,8 @@
 
 <?php
 
-    $connection = new mysqli('localhost', 'root', '', 'hospital_db');
+//    $connection = new mysqli('localhost', 'root', '', 'hospital_db');
+$connection = mysqli_connect("localhost", "id11975224_tobaino", "jesusislord1", "id11975224_hospital_db");
 
     $error_flag = 0;
     $result;

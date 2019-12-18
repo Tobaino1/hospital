@@ -16,7 +16,8 @@
     <h1>Welcome to Agent Based Clinic Management System</h1>
     <p class="block-quote">Our aim has always been to bring world–class medical care within the reach for our distinguished students</p>
     <p><?php include('slideshow.php');?></p>
-    <?php include ('header.php'); ?>
+
+    <p>  <?php include('header_admin.php'); ?></p>
 
     <!doctype html>
 

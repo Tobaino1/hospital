@@ -16,7 +16,7 @@ if (!isset($_SESSION)) {
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <div align="center"><h1>Welcome to Agent Based Clinic Management System</h1>
         <p class="block-quote">Our aim has always been to bring world–class medical care within the reach of
-            distinguised students.</p>
+            distinguished students.</p>
     </div>
     <p><?php include('slideshow.php'); ?></p>
 
@@ -26,7 +26,9 @@ include("header.php");
 ?>
 
 <?php
-$con = mysqli_connect("localhost", "root", "", "hospital_db");
+//$con = mysqli_connect("localhost", "root", "", "hospital_db");
+$con = mysqli_connect("localhost", "id11975224_tobaino", "jesusislord1", "id11975224_hospital_db");
+
 // Check connection
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -34,17 +36,16 @@ if (mysqli_connect_errno()) {
 }
 ?>
 <?php
-//if (isset($_POST['login']))
-//    $names=$row['names'];
-//{
-//
-//    $names = mysqli_real_escape_string($con, $_POST['names']);
-//    $unique_id = mysqli_real_escape_string($con, $_POST['unique_id']);
-//}
+if (isset($_POST['retrieve'])) //    $matric = $row['matric'];
+{
 
+    $matric = mysqli_real_escape_string($con, $_POST['matric']);
+} else {
+    echo 'Invalid matric';
+}
 
-//$query=$con->query("select * from report WHERE matric= '$matric'");
-$query = $con->query("select * from report ");
+$query = $con->query("select * from report WHERE matric= '$matric'");
+//$query = $con->query("select * from report ");
 while ($row = mysqli_fetch_array($query)) {
 
     $surname = $row['surname'];

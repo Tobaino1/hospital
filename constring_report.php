@@ -35,8 +35,8 @@ move_uploaded_file($temp, $uploads_dir . basename($image));
 
 
 // Create connection
-$conn = mysqli_connect("localhost", "root", "", "hospital_db");
-//    $conn = mysqli_connect("localhost", "lagosrep_tobaino", "pass?1><m", "hospital_db");
+//$conn = mysqli_connect("localhost", "root", "", "hospital_db");
+$conn = mysqli_connect("localhost", "id11975224_tobaino", "jesusislord1", "id11975224_hospital_db");
 
 // Check connection
 if ($conn === false) {
